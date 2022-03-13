@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="juego.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Bebas+Neue#standard-styles">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>The NFT auction game</title>
+</head>
+
+<body>
+    <div class="tuiter">
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+    </div>
+    <div class="cuerpo">
+        <div class="rondas" id="rondas">
+            Round 0
+        </div>
+        <div class="infocuadro" id="infocuadro">
+            <a>Title</a>
+        </div>
+        <div class="totalimg">
+            <div class="imagen" id="imagecontainer">
+                <img src="ejemplo.jpg" id="nftimage">
+            </div>
+            <div class="revelarprecio" id="revelarprecio">
+
+            </div>
+        </div>
+        <div class="input">
+            <input pattern="\d*" placeholder="0$" class="precio" id="userpriceinp">
+            <button class="enviar" type="submit" id="enviar" onclick="showprice(this)"></button>
+            <!--<button class="next" type="button" id="next">CONTINUAR</button>-->
+
+        </div>
+        <p id="addedpoints" class="textosinmasdos"></p>
+        <div class="textosinmas">
+            <p id="points"></p>
+        </div>
+    </div>
+    <div class="texteth">
+        <a>Precio del ETH en directo</a>
+    </div>
+    <div class="eth">
+        <script type="text/javascript" src="https://ethereumprice.org/assets/js/widget/app.min.js"></script>
+        <div class="ethereum-price-widget" data-quote="USD" style="height:190px;width:300px;background-image:url('https://ethereumprice.org/assets/images/animated/ring.svg');background-position:50%;background-size:50px;background-repeat:no-repeat;"><span style="display:block;text-align:center;padding:20px 0;font-size:14px;font-family:'Open Sans', Arial;"></span></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
